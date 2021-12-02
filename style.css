@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*************************
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+************************/
+
+header{
+    width: 100%;
+    background-color: black;
+}
+.container-fluid p.logo{
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+    cursor: pointer;
+}
+.container-fluid p.logo span{
+    font-weight: 300;
+    color: orange;
+}
+.navbar ul li{
+    padding-left: 25px;
+    transition: .3s;
+}
+.navbar ul li:hover{
+    transform: scale(1.1);
+}
+.navbar ul li a{
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(30deg, rgb(93, 59, 218), rgb(35, 35, 209));    
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.nav-item .nav-link{
+    color: white !important;
+    margin-left: 12px;
+}
+
+
+.gallary{
+    background: url(images/1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.gallary .banner{
+    height: 70vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+.gallary .banner h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+.gallary .banner h1 span{
+    font-weight: 400;
+    color: orange;
+}
+.gallary .banner p.p-1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+    width: 68%;
+    font-family: 'Open Sans', sans-serif;
+}
+.border{
+    height: 2px;
+    width: 90px;
+}
+.gallary .banner p.p-2{
+    width: 68%;
+    color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    
+}
+.gallary .banner button{
+    padding: 10px 25px;
+    border: 1px solid orange;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    transition: .5s;
+}
+.gallary .banner button:hover{
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    color: black;
+    transform: scale(1.05);
+}
+.banner .card p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+.banner .card p span{
+    color: orange;
+}
+.banner .card-body form input{
+    border: none;
+    border-bottom: 1px solid grey !important;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0px 10px 5px 10px;
+}
+.banner .card-body form input:focus{
+    outline: none;
+}
+.banner .card-footer{
+    background-color: orange;
+}
+.banner .card-footer input{
+    width: 100%;
+    border: none;
+    background-color: orange;
+    color: #fff;
+}
+
+.social{
+    border-bottom: 2px solid grey;
+}
+.icon-side{
+    margin-top: 25px;
+}
+.icon-side h2 p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.middle{
+    width: 100%;
+    background-color: #f0f0f0;
+}
+.middle .preview .row{
+    padding: 8% 0%;
+}
+.middle .preview p{
+    margin-top: 25px;
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+}
+.middle .preview .down{
+    margin-top: 8px;
+    padding: 8px 16px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+}
+.middle .preview li{
+    width: 110px;
+    height: 70px;
+    background-color: orange;
+    margin-bottom: 2px;
+    text-align: center;
+    line-height: 70px;
+}
+.middle .preview li a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 600;
+}
+.middle .preview li.tab-1{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.middle .preview li.tab-3{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.tab-2, .tab-3{
+    background-color: grey !important;
+}
+.middle .preview img{
+    width: 100%;
+}
+
+
+
+.sub-list{
+    width: 100%;
+    margin: 8% 0;
+}
+.sub-list .details h3{
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.sub-list .details .br{
+    border: 1px solid orange;
+    width: 50px;
+}
+.sub-list .details p{
+    margin-top: 20px;
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+}
+.details .extra p.one{
+    margin-top: 0;
+}
+.details .extra p.two{
+    margin-top: 0;
+}
+
+
+
+.sub-title{
+    background-color: #f0f0f0;
+    width: 100%;
+}
+.sub-title .element{
+    padding: 10% 0;
+}
+.sub-title .element h3{
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.sub-title .element .br{
+    border: 1px solid orange;
+    width: 70px;
+    margin-top: 20px;
+}
+.sub-title .element p{
+    width: 80%;
+    margin-top: 20px;
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.awesome{
+    width: 100%;
+    margin: 8% 0;
+}
+.awesome .up{
+    text-align: center;
+}
+.up h1{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+.up .br{
+    border: 1px solid orange;
+    width: 80px;
+    margin: 0 auto;
+}
+.up p{
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
+.awesome .change{
+    margin-top: 95px;
+}
+.awesome h3{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.awesome .change p{
+    padding: 0 25px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    margin-top: 20px;
+}
+
+
+
+.card{
+    width: 100%;
+    background-color: #f0f0f0;
+    border: none;
+}
+.upper{
+    margin: 8% 0;
+    text-align: center;
+}
+.upper h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.upper .br{
+    border: 1px solid orange;
+    width: 80px;
+    margin: 0 auto;
+}
+.upper p{
+    margin-top: 20px;
+}
+.m-60{
+    align-items: flex-end;
+}
+.table-1 .price-sec, .table-1 .price-list{
+    background-color: #333333;
+}
+.table-1 .details{
+    background-color: #fff;
+}
+.table-1 .price-sec p{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.table-1 .price-list{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0px;
+    border-bottom: 8px solid orange;
+}
+.table-1 .price-list h1{
+    margin-bottom: 25px;
+}
+.table-1 .price-list h1 span{
+    font-size: 95px;
+}
+.table-1 .price-list p{
+    font-style: italic;
+    color: #c3c3c5;
+}
+.table-1 .details ul{
+    padding: 0;
+}
+.table-1 .details ul li{
+    text-align: center;
+    border-bottom: 1px solid #c3c3c5;
+    padding: 10px 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+}
+.table-1 .details ul li.last{
+    border-bottom: none;
+}
+
+
+.table-2 .price-sec, .table-2 .price-list{
+    background-color: #333333;
+}
+.table-2 .details{
+    background-color: #fff;
+}
+.table-2 .price-sec p{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.table-2 .price-list{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0px;
+}
+.table-2 .price-list .special{
+    padding: 0;
+}
+.table-2 .price-list h1{
+    margin-bottom: 25px;
+}
+.table-2 .price-list h1 span{
+    font-size: 95px;
+}
+.table-2 .price-list p{
+    font-style: italic;
+    color: #c3c3c5;
+}
+.table-2 .price-list .popular{
+    background-color: orange;
+    margin: none;
+    padding: none;
+}
+.table-2 .price-list .popular p{
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+.table-2 .details ul{
+    padding: 0;
+}
+.table-2 .details ul li{
+    text-align: center;
+    border-bottom: 1px solid #c3c3c5;
+    padding: 10px 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+}
+.table-2 .details ul li.last{
+    border-bottom: none;
+}
+
+
+
+.table-3 .price-sec, .table-3 .price-list{
+    background-color: #333333;
+}
+.table-3 .details{
+    background-color: #fff;
+}
+.table-3 .price-sec p{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.table-3 .price-list{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0px;
+    border-bottom: 8px solid orange;
+}
+.table-3 .price-list h1{
+    margin-bottom: 25px;
+}
+.table-3 .price-list h1 span{
+    font-size: 95px;
+}
+.table-3 .price-list p{
+    font-style: italic;
+    color: #c3c3c5;
+}
+.table-3 .details ul{
+    padding: 0;
+}
+.table-3 .details ul li{
+    text-align: center;
+    border-bottom: 1px solid #c3c3c5;
+    padding: 10px 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+}
+.table-3 .details ul li.last{
+    border-bottom: none;
+}
+
+
+
+.bios{
+    width: 100%;
+    background-color: #fff;
+}
+.testimonial{
+    padding: 10% 0;
+    text-align: center;
+}
+.testimonial .intro h1{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.testimonial .intro .br{
+    width: 80px;
+    border: 1px solid orange;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.testimonial .intro p{
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+}
+.testimonial .row{
+    margin-top: 80px;
+}
+.testimonial .row .info{
+    background-color: #f0f0f0;
+    color: grey;
+    padding: 16px;
+    text-align: start;
+    border-radius: 5px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+.info .corner{
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    left: 25px;
+    bottom: -15px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+
+
+/**********************
+Design section is start from here
+**********************/
+
+
+.design-sec{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),url(images/homedecore.jpg);
+    background-size: cover;
+    height: 55vh;
+}
+.category{
+    padding: 10% 0;
+    text-align: center;
+}
+.category h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.category .br{
+    border: 1px solid #fff;
+    width: 70px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.category p{
+    color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+}
+.category button{
+    padding: 11px 22px;
+    margin-top: 50px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+    transition: .5s;
+}
+.category button:hover{
+    transform: scale(1.1);
+    border: 1px solid orange;
+    color: gold;
+}
+
+/**********************
+Design section is end from here
+**********************/
+
+
+
+/*************************
+Footer section is start from here
+**************************/
+
+.form{
+    width: 100%;
+}
+.information{
+    margin: 10% 0;
+    text-align: center;
+}
+.information h1{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.information .br{
+    border: 1px solid orange;
+    width: 70px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.information p{
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form .row{
+    margin-top: -60px;
+}
+.form .row input{
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #c3c3c5;
+    margin-bottom: 30px;
+    padding: 0px 10px 5px 10px;
+}
+.form .row input:focus{
+    outline: none;
+}
+.form .row textarea{
+    border: none;
+    border-bottom: 1px solid #c3c3c5;
+    padding: 0px 10px 5px 10px;
+}
+.form .row textarea:focus{
+    outline: none;
+}
+.form button{
+    margin-left: 44%;
+    margin-bottom: 8%;
+    padding: 12px 26px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid orange;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    transition: .5s;
+}
+.form button:hover{
+    color: #fff;
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+
+/*************************
+Footer section is end from here
+**************************/
