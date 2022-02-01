@@ -147,7 +147,31 @@ header{
 .icon-side h2 p{
     font-family: 'Open Sans', sans-serif;
 }
-
+.icon-bar ul{
+    display: flex;
+    justify-content: flex-end;  
+}
+.icon-bar ul li{
+    font-size: 21px;
+    margin-left: 55px;
+    margin-top: 20px;
+    transition: .4s ease-in-out;
+}
+.icon-bar ul li:hover{
+    transform: scale(1.2);
+}
+.icon-bar ul li a{
+    color: rgb(27, 37, 53);
+    padding: 4px 12px;
+    border: 1px solid orange;
+    border-radius: 8px;
+    transition: .4s ease-in-out;
+}
+.icon-bar ul li a:hover{
+    color: white;
+    background-color: orange;
+    transform: scale(1.1);
+}
 
 .middle{
     width: 100%;
